@@ -2050,7 +2050,7 @@ async function connectOneDrive(){
   var challenge=await generateChallenge(verifier);
   localStorage.setItem('od_verifier',verifier);
 
-  var redirectUri=window.location.href.split('#')[0].split('?')[0];
+  var redirectUri='https://koalagaming42.github.io/activ2s/';
   var state=Math.random().toString(36).slice(2);
   localStorage.setItem('od_state',state);
   localStorage.setItem('od_redirect',redirectUri);
